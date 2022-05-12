@@ -5,7 +5,7 @@ const RnImageSelectCompress = async (
   width = 0,
   height = 0,
   compressFormat = "JPEG",
-  quality = 50
+  quality = 100
 ) => {
   let options = {
     title: "Select Image",
