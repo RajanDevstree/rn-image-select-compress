@@ -2,8 +2,8 @@ import { launchImageLibrary } from "react-native-image-picker";
 import ImageResizer from "react-native-image-resizer";
 
 const RnImageSelectCompress = async (
-  width = 0,
-  height = 0,
+  width = "default",
+  height = "default",
   compressFormat = "JPEG",
   quality = 100
 ) => {
@@ -31,8 +31,8 @@ const RnImageSelectCompress = async (
     let source = responseImage;
     const responseImageCompress = await ImageResizer.createResizedImage(
       source["assets"][0].uri,
-      width == 0 ? source["assets"][0].width : width,
-      height == 0 ? source["assets"][0].width : height,
+      width == "default" ? source["assets"][0].width : width,
+      height == "default" ? source["assets"][0].width : height,
       compressFormat,
       quality,
       0,
