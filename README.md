@@ -8,7 +8,7 @@
 npm i react-native-image-picker react-native-image-resizer react-native-image-crop-picker rn-image-select-compress
 ```
 
-### In android no need any permission in AndroidManifest.xml but ios If you are allowing user to select image/video from photos, add `NSPhotoLibraryUsageDescription`. If you are allowing user to capture image add `NSCameraUsageDescription` key also. If you are allowing user to capture video add `NSCameraUsageDescription` add `NSMicrophoneUsageDescription` key also.
+In android no need any permission in AndroidManifest.xml but ios If you are allowing user to select image/video from photos, add `NSPhotoLibraryUsageDescription`. If you are allowing user to capture image add `NSCameraUsageDescription` key also. If you are allowing user to capture video add `NSCameraUsageDescription` add `NSMicrophoneUsageDescription` key also.
 
 ## Props
 
